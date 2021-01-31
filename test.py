@@ -25,7 +25,10 @@ def clicked():
    out[1] = y.group()
    z = re.search("RAM[ ].{0,10}MB", str(path))
    out[2] = z.group()
-   lbl.configure(text=out[0] + '\n' + out[1] + '\n' + out[2])
+#   lbl.configure(text=out[0] + '\n' + out[1] + '\n' + out[2])
+
+   lbl.set("You must go with Python")
+
    print(out[0] + '\n' + out[1] + '\n' + out[2])
 btn = Button(window, text="Click", command=clicked)
 btn.grid(column=0, row=0)
