@@ -6,7 +6,7 @@ from tkinter import *
  
   
  
-PROCESS = ['ls']
+PROCESS = ['netstat', '1']
 class Console(tk.Frame):
     def __init__(self, master, *args, **kwargs):
         tk.Frame.__init__(self, master, *args, **kwargs)
